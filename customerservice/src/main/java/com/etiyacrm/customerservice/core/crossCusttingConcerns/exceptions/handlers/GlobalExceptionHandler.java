@@ -43,10 +43,10 @@ public class GlobalExceptionHandler {
 
     }
 
-    @ExceptionHandler({Exception.class})
-    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-    public ProblemDetails handleException() {
-        return new ProblemDetails("Unknown Error","Some error occurred."
-                ,"https://turkcell.com/exceptions/unknown","400");
-    }
+//    @ExceptionHandler({Exception.class})
+//    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+//    public ProblemDetails handleException() {
+//        return new ProblemDetails("Unknown Error","Some error occurred."
+//                ,"https://turkcell.com/exceptions/unknown","400");
+//    }
 }
