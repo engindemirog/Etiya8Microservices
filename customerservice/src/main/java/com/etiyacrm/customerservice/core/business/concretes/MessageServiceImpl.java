@@ -14,4 +14,9 @@ public class MessageServiceImpl implements MessageService {
     public String getMessage(String key) {
         return messageSource.getMessage(key,null, LocaleContextHolder.getLocale());
     }
+
+    @Override
+    public String getMessageWithArgs(String key, Object... args) {
+        return messageSource.getMessage(key, args, LocaleContextHolder.getLocale());
+    }
 }
